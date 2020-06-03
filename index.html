@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Memory Game</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="controls">
+			<div class="control-button">
+				<div class="head">
+					<h1 class="title">memory game</h1>
+					<p class="para">It helps you train your mind and inhance your memory</p>
+				</div>
+				<span>start game</span>
+				<div class="player-name">
+					<label class="label" for="player-name">Enter Your Name :</label>
+					<input class="input" type="text" name="player-name" value="" id="player-name">
+					<button class="btn">GO</button>	
+			    </div>
+			</div>
+			<div class="tips">
+				<p class="tips-para">The pictures will show up for seconds, make sure to remember there positions.</p>
+				<button class="kick-off">Kick Off</button>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="info-container">
+				<div>
+					Hello: <span class="name"></span>
+				</div>
+				<div class="tries">
+					Wrong tries: <span>0</span>
+				</div>
+			</div>
+			<div class="game-blocks-container">
+				<!-- cat -->
+				<div class="game-block" data-animals='cat'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/cat.jpg" alt="cat">
+					</div>
+				</div>
+				<div class="game-block" data-animals='cat'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/cat.jpg" alt="cat">
+					</div>
+				</div>
+				<!-- dog -->
+				<div class="game-block" data-animals='dog'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/dog.jpg" alt="dog">
+					</div>
+				</div>
+				<div class="game-block" data-animals='dog'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/dog.jpg" alt="dog">
+					</div>
+				</div>
+				<!-- deer -->
+				<div class="game-block" data-animals='deer'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/deer.jpg" alt="deer">
+					</div>
+				</div>
+				<div class="game-block" data-animals='deer'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/deer.jpg" alt="deer">
+					</div>
+				</div>
+				<!-- leather -->
+				<div class="game-block" data-animals='leather'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/leather.jpg" alt="leather">
+					</div>
+				</div>
+				<div class="game-block" data-animals='leather'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/leather.jpg" alt="leather">
+					</div>
+				</div>
+				<!-- lion -->
+				<div class="game-block" data-animals='lion'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/lion.jpg" alt="lion">
+					</div>
+				</div>
+				<div class="game-block" data-animals='lion'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/lion.jpg" alt="lion">
+					</div>
+				</div>
+				<!-- penguin -->
+				<div class="game-block" data-animals='penguin'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/penguin.jpg" alt="penguin">
+					</div>
+				</div>
+				<div class="game-block" data-animals='penguin'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/penguin.jpg" alt="penguin">
+					</div>
+				</div>
+				<!-- tiger -->
+				<div class="game-block" data-animals='tiger'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/tiger.jpg" alt="tiger">
+					</div>
+				</div>
+				<div class="game-block" data-animals='tiger'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/tiger.jpg" alt="tiger">
+					</div>
+				</div>
+				<!-- rat -->
+				<div class="game-block" data-animals='rat'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/rat.jpg" alt="rat">
+					</div>
+				</div>
+				<div class="game-block" data-animals='rat'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/rat.jpg" alt="rat">
+					</div>
+				</div>
+				<!-- raccoon -->
+				<div class="game-block" data-animals='raccoon'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/raccoon.jpg" alt="raccoon">
+					</div>
+				</div>
+				<div class="game-block" data-animals='raccoon'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/raccoon.jpg" alt="raccoon">
+					</div>
+				</div>
+				<!-- sheep -->
+				<div class="game-block" data-animals='sheep'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/sheep.jpg" alt="sheep">
+					</div>
+				</div>
+				<div class="game-block" data-animals='sheep'>
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/sheep.jpg" alt="sheep">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="congratulation-container">
+			<div class="congratulation-elements">
+				<h1>congratulation!</h1>
+				<div class="congratulation-buttons">
+					<span class="play-again">play again</span>
+					<span class="leave">laeve</span>
+				</div>	
+			</div>	
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

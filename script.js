@@ -13,13 +13,14 @@ let control = document.querySelector('.control-button'),
 
 	myInput.focus();
  
-}
+	}
 
-myButton = document.querySelector('.btn'),
+let myButton = document.querySelector('.btn'),
 
 controls = document.querySelector('.controls');
 
-myButton.onclick = function() {
+myButton.onclick = function(event) {
+	event.preventDefault()
 
 	let playerName = myInput.value;
 
@@ -47,6 +48,17 @@ kickOffBtn.onclick = function() {
 		controls.classList.remove('show');
 
 		controls.style.display = "none";
+
+		const animalBlocks = Array.from(document.querySelectorAll('.game-block'));
+		animalBlocks.forEach(block=>{
+			block.classList.add('fliped');
+		});
+		
+		setTimeout(()=>{
+			animalBlocks.forEach(block=>{
+				block.classList.remove('fliped');
+			})
+		},2500)
 
 	}
 
@@ -184,7 +196,7 @@ function checkMatchedBlocks(firstBlock, secondBlock) {
 
 //here is where I'am getting troubles (uncomment the next sectoin)
 
-/*
+
 
 //Success function
 function success() {
@@ -254,8 +266,6 @@ function reset() {
 	
 };
 
-
-*/
 
 
 
